@@ -14,21 +14,36 @@ mismatches":
 Для запуска программы необходимо выполнить следующие команды в корне директории проекта:
 
 ```
-    rm -rf build
-    mkdir build && cd build
-    cmake ..
-    make    
+rm -rf build
+mkdir build && cd build
+cmake ..
+make    
 ```
-В текущей папке build появится исполняемый файл "solution". Для его запуска выполните следующую инструкцию:
+В текущей папке build появится исполняемый файл "dir_comparator". Для его запуска выполните следующую инструкцию:
 ```
-    ./solution <относительный путь до директории 1> <относительный путь до директории 2> <процент>  
+./solution <относительный путь до директории 1> <относительный путь до директории 2> <процент>  
 ```
 
 <h3> Пример запуска программы </h3>
+
 ```
-    rm -rf build
-    mkdir build && cd build
-    cmake ..
-    make
-    ./solution ../dir_1 ../dir_2 0.5
+rm -rf build
+mkdir build && cd build
+cmake ..
+make
+./dir_comparator ../dir_1 ../dir_2 0.5
+```
+
+<h3> Пример ответа программы </h3>
+
+```
+Identical files:
+../dir_1/ergcregcre.txt - ../dir_2/b.txt
+
+Similar files:
+
+Unique files from the first directory:
+
+Unique files from the second directory:
+../dir_2/a.txt
 ```
