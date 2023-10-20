@@ -1,4 +1,5 @@
-#include <iostream>
+#pragma once
+
 #include <vector>
 #include <complex>
 
@@ -70,4 +71,48 @@ namespace FFT {
             res[i] = llround(fres[i].real());
         }
     }
+}
+
+size_t get_max_common_chars_count(const std::string& text, const std::string& pattern) {
+    size_t n = text.size();
+    size_t m = pattern.size();
+    std::vector<size_t> common_chars_count(text.size() - pattern.size() + 1, 0);
+    for (char c{' '}; c <= '~'; ++c) {
+        std::vector<int32_t> R(n);
+        for (int32_t i = 0; i < n; ++i) {
+            R[i] = (text[i] == c);
+        }
+        std::vector<int32_t> S(m);
+        for (int32_t i = 0; i < m; ++i) {
+            S[i] = (pattern[m - 1 - i] == c);
+        }
+
+        uint32_t deg = 1;
+        while (deg <= n + m) {
+            deg *= 2;
+        }
+
+        R.resize(deg);
+        for (uint32_t i = n; i < deg; ++i) {
+            R[i] = 0;
+        }
+
+        S.resize(deg);
+        for (uint32_t i = m; i < deg; ++i) {
+            S[i] = 0;
+        }
+
+        std::vector<int32_t> res(deg, 0);
+        FFT::multiply(R, S, res);
+
+        for (size_t i = 0; i < common_chars_count.size(); ++i) {
+            common_chars_count[i] += res[pattern.size() - 1 + i];
+        }
+
+    }
+    size_t result = 0;
+    for (auto count: common_chars_count) {
+        result = std::max(result, count);
+    }
+    return result;
 }
