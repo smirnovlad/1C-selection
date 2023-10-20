@@ -1,0 +1,3 @@
+/home/vlad/Projects/CLionProjects/1C-selection/build/CMakeFiles/1C_selection.dir
+/home/vlad/Projects/CLionProjects/1C-selection/build/CMakeFiles/edit_cache.dir
+/home/vlad/Projects/CLionProjects/1C-selection/build/CMakeFiles/rebuild_cache.dir
