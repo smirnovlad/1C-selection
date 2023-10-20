@@ -124,5 +124,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/1C_selection.dir/DependInfo.cmake"
+  "CMakeFiles/dir_comparator.dir/DependInfo.cmake"
   )

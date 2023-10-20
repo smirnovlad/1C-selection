@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 1C_selection
+# Target rules for targets named dir_comparator
 
 # Build rule for target.
-1C_selection: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 1C_selection
-.PHONY : 1C_selection
+dir_comparator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dir_comparator
+.PHONY : dir_comparator
 
 # fast build rule for target.
-1C_selection/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1C_selection.dir/build.make CMakeFiles/1C_selection.dir/build
-.PHONY : 1C_selection/fast
+dir_comparator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dir_comparator.dir/build.make CMakeFiles/dir_comparator.dir/build
+.PHONY : dir_comparator/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1C_selection.dir/build.make CMakeFiles/1C_selection.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dir_comparator.dir/build.make CMakeFiles/dir_comparator.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1C_selection.dir/build.make CMakeFiles/1C_selection.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dir_comparator.dir/build.make CMakeFiles/dir_comparator.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/1C_selection.dir/build.make CMakeFiles/1C_selection.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dir_comparator.dir/build.make CMakeFiles/dir_comparator.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... 1C_selection"
+	@echo "... dir_comparator"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

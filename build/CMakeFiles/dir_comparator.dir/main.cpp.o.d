@@ -1,4 +1,4 @@
-CMakeFiles/1C_selection.dir/main.cpp.o: \
+CMakeFiles/dir_comparator.dir/main.cpp.o: \
  /home/vlad/Projects/CLionProjects/1C-selection/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_algobase.h \

@@ -1,2 +1,2 @@
-# Empty dependencies file for 1C_selection.
+# Empty dependencies file for dir_comparator.
 # This may be replaced when dependencies are built.
