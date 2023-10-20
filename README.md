@@ -47,3 +47,7 @@ Unique files from the first directory:
 Unique files from the second directory:
 ../dir_2/a.txt
 ```
+
+<h2> TODO </h2>
+
+Не успел потестить чтение данных из бинарных файлов.

@@ -1,3 +1,0 @@
-/home/vlad/Projects/CLionProjects/1C-selection/build/CMakeFiles/dir_comparator.dir
-/home/vlad/Projects/CLionProjects/1C-selection/build/CMakeFiles/edit_cache.dir
-/home/vlad/Projects/CLionProjects/1C-selection/build/CMakeFiles/rebuild_cache.dir
